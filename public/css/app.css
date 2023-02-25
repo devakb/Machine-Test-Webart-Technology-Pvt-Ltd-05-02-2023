@@ -1,0 +1,178 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-group{
+    margin-bottom: 15px !important;
+}
+
+.form-group label{
+    color: #115a98;
+    font-size: 14px;
+    font-weight: 400;;
+}
+
+.form-control{
+    border-radius: 0;
+    border:none;
+    border-bottom: 2px solid rgb(211, 211, 211);
+}
+.form-control:focus{
+    border-bottom: 2px solid #115a98;
+    box-shadow: none;
+}
+.form-control.errored{
+    border-bottom: 2px solid #c71818;
+    box-shadow: none;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.ui-widget-header {
+    background: #115a98;
+    color: #fff !important;
+}
+.ui-widget-header * {
+    font-family: 'Roboto', sans-serif !important;
+}
+.ui-widget-header .ui-icon {
+    background-image: url("/images/ui-icons-inverted.png");
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus{
+    background: #1484e670 !important;
+    border: none !important;
+}
+.ui-datepicker-calendar th {
+    font-weight: 400 !important;
+}
+.ui-datepicker-calendar td {
+    font-weight: 100 !important;
+}
+.ui-datepicker-calendar td a {
+    background: #fff !important;
+    border-color: #eeeeee !important;
+}
+.ui-datepicker-calendar .ui-state-active {
+    background: #115a98 !important;
+    color: #fff !important;
+}
+.ui-datepicker-calendar .ui-state-highlight {
+    background: #f1f9fb !important;
+    color: #115a98;
+    border-color: #e2eff3 !important;
+}
+
+
+select.ui-datepicker-month,
+select.ui-datepicker-year {
+    background: transparent;
+    border: none !important;
+    color: #fff;
+    box-shadow: none !important;
+    outline: none !important;
+}
+select.ui-datepicker-month option,
+select.ui-datepicker-year option {
+    color: #115a98 !important;
+}
+
+
+
+.select2-container--open .select2-selection.select2-selection--single{
+    border-bottom: 2px solid #115a98 !important;
+}
+.select2[errored] .select2-selection{
+    border-bottom: 2px solid #c71818 !important;
+}
+
+.select2-selection.select2-selection--single {
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid lightgray;
+    display: block;
+    width: 100%;
+    height: 38px;
+}
+.select2-selection.select2-selection--single .select2-selection__rendered {
+    padding: 2px 0.75rem;
+}
+.select2-results__option--selected {
+    background: #115a98 !important;
+    color: #fff !important;
+}
+.select2-results__option--highlighted:not(.select2-results__option--selected) {
+    background: #eeeded !important;
+    color: #000 !important;
+}
+
+
+.btn{
+    text-transform: uppercase;
+}
+.btn.btn-primary{
+    background: #115a98;
+}
+.btn.btn-primary:hover{
+    background: #09375f;
+}
+
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.row{
+    position: relative;
+}
+
+.delete-icon-pickup-proson{
+
+    position: absolute;
+    left: -60px;
+    display: inline-block;
+    width: 30px;
+
+}
+
+
+.fa-1\/5x{
+    font-size: 1.5em;
+}
+
+
+.caption{
+    font-size: 12px;
+    font-weight: 400;
+    color: #113c61;
+}
+
+
+label.required:after {
+    content: " *";
+    color: red;
+    font-size: smaller;
+}
+
+
+span.errored:not(.select2) {
+    color: red;
+    font-size: smaller;
+}
+
+form.loadingstate input,
+form.loadingstate select,
+form.loadingstate textarea{
+    opacity: 0.5;
+}
+
+form.loadingstate .btn{
+    opacity: 0.5;
+    pointer-events: loading;
+}
